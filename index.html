@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Alura-Geek</title>
+</head>
+<body>
+    <header>
+        <div class="img-container">
+            <img src="https://i.pinimg.com/originals/70/da/7c/70da7ceef81c8a8310ed8e6bed6d90d9.png" alt="Imagen">
+            <img src="https://i.pinimg.com/originals/70/da/7c/70da7ceef81c8a8310ed8e6bed6d90d9.png" alt="Imagen">
+            <img src="https://i.pinimg.com/originals/70/da/7c/70da7ceef81c8a8310ed8e6bed6d90d9.png" alt="Imagen">
+            AluraGeek
+        </div>
+    </header>
+    <div id="contactoMensaje" style="display: none;"></div>
+    <div class="container">
+        <div class="half">
+            <!-- aqui el contenedor -->
+            <p>Mis productos.</p>
+            <div class="card shadow">
+                <div id="productos-grid" class="productos-container">
+                    <!-- Los productos se renderizarán aquí dinámicamente -->
+                </div>
+                <div id="no-productos" style="display: none;">No hay productos disponibles.</div>
+            </div>
+        </div>
+        <div class="half">
+            <div class="form-container">
+                <h1>Agregar Producto:</h1>
+                <form id="nuevoProductoForm">
+                    <input type="text" id="nombre" placeholder="Nombre..." required>
+                    <input type="text" id="imagenUrl" placeholder="Imagen URL..." required>
+                    <input type="number" id="precio" placeholder="Precio..." required step="0.01">
+                    
+                    <!-- Contenedor para los botones -->
+                    <div class="form-buttons">
+                        <button type="submit">Enviar</button>
+                        <button type="button" id="borrarCampos">Limpiar</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <div class="img-container">
+            <img src="https://i.pinimg.com/originals/70/da/7c/70da7ceef81c8a8310ed8e6bed6d90d9.png" alt="Imagen">
+            <img src="https://i.pinimg.com/originals/70/da/7c/70da7ceef81c8a8310ed8e6bed6d90d9.png" alt="Imagen">
+            <img src="https://i.pinimg.com/originals/70/da/7c/70da7ceef81c8a8310ed8e6bed6d90d9.png" alt="Imagen">
+            AluraGeek
+        </div>
+        <p>Desarrollado por Juan_7u7</p>
+        <p>2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
